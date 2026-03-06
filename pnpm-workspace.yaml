@@ -1,0 +1,12 @@
+engineStrict: true
+
+onlyBuiltDependencies:
+  - esbuild
+
+packageManagerStrictVersion: true
+
+publicHoistPattern:
+  - '*eslint*'
+  - '*prettier*'
+
+savePrefix: ''

@@ -1,29 +1,14 @@
 PNPM := pnpm
+PNPM_EXEC := pnpm exec
 
-.PHONY: install
+.PHONY: install clean dev
+
 install:
 	$(PNPM) install
 
-.PHONY: dev
+# Clean generated files.
+clean:
+	rm -rf ./dist ./node_modules
+
 dev:
-	$(PNPM) vite
-
-.PHONY: build
-build:
-	$(PNPM) vite build
-
-.PHONY: typecheck
-typecheck:
-	$(PNPM) tsc --noEmit
-
-.PHONY: lint
-lint:
-	$(PNPM) eslint './src/**/*.{ts,tsx}'
-
-.PHONY: check-format
-check-format:
-	$(PNPM) prettier --check .
-
-.PHONY: format
-format:
-	$(PNPM) prettier --write .
+	$(PNPM_EXEC) vite
