@@ -1,4 +1,6 @@
 /openapi.yaml
 /public
 /pnpm-lock.yaml
+/src/api/endpoints
+/src/api/models
 routeTree.gen.ts
