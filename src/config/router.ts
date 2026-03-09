@@ -1,7 +1,7 @@
 import { createRouter } from '@tanstack/react-router';
-import { Pending } from './components/ui/pending';
+import { Pending } from '../components/ui/pending';
+import { routeTree } from '../routeTree.gen';
 import { queryClient } from './query-client';
-import { routeTree } from './routeTree.gen';
 
 // Set up a Router instance
 export const router = createRouter({

@@ -28,7 +28,16 @@ export default defineConfig([
       },
     },
     rules: {
-      '@typescript-eslint/restrict-template-expressions': 'off',
+      '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowNullish: true }],
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', caughtErrorsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+      '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/strict-boolean-expressions': ['error', { allowNumber: false, allowString: false, allowNullableBoolean: true }],
+      '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
+      '@typescript-eslint/only-throw-error': 'off',
+      '@typescript-eslint/no-floating-promises': 'off',
+      eqeqeq: ['error', 'smart'],
+      'no-else-return': 'error',
+      'prefer-template': 'error',
     },
   },
 ]);
