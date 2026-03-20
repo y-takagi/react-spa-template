@@ -18,7 +18,7 @@ function AppSidebar() {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <div>ERP Offload</div>
+            <div>React SPA Template</div>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
