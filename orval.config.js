@@ -1,7 +1,7 @@
 import { defineConfig } from 'orval';
 
 export default defineConfig({
-  petstore: {
+  app: {
     input: {
       target: './openapi.yaml',
     },

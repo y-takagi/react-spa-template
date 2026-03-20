@@ -12,8 +12,6 @@ dist
 dist-ssr
 *.local
 .env
-.tool-versions
-.node-version
 
 # Editor directories and files
 .vscode/*
@@ -26,5 +24,13 @@ dist-ssr
 *.sln
 *.sw?
 
+# Node version files
+.tool-versions
+.node-version
+mise.toml
+
 # claude
 /.claude/settings.local.json
+
+# tanstack
+/.tanstack
